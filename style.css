@@ -1,0 +1,89 @@
+*{
+    @import url('https://fonts.cdnfonts.com/css/google-sans');
+    font-family: 'Product Sans Black', sans-serif;
+
+}
+
+body{
+    background: #16e0dd;
+    background: linear-gradient(90deg, rgba(22, 224, 221, 1) 0%, rgba(115, 146, 144, 1) 7%, rgb(219, 200, 167) 19%, rgba(47, 253, 202, 1) 47%, rgba(252, 176, 69, 1) 80%, rgba(235, 180, 250, 1) 93%);
+    color: #000000;
+    @import url('https://fonts.cdnfonts.com/css/google-sans');    
+    font-family: 'Product Sans', sans-serif;
+
+}
+form {
+    width: 500px;
+    
+}
+fieldset {
+    border: 3px solid green;
+    border-radius: 20px;
+}
+input[required]{
+    border:  2px solid red;
+
+}
+input[optional] {
+    border : 3px solid green
+}
+input:read-only {
+
+}
+input[type="radio"]:checked {
+    height: 20px;
+    width: 20px;
+    color: blue;
+}
+input[type="radio"]:checked+label {
+    color: yellow;
+    cursor: 
+    ;
+}
+input[type="submit"]{
+    border: 3px solid rgb(255, 106, 0);
+    border-radius: 15px;
+}
+select{
+    background-color: rgb(220, 220, 249);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+input:focus{
+    cursor: pointer;
+    background-color: aqua;
+    color: rgb(148, 153, 51);
+    
+}
+input[type="text"]+span {
+    display: none;
+}
+input[type="text"]:hover+span{
+    display: inline;
+    height: 10px;
+    width: 10px;
+}
+/* image for tick and wrong mark */
+/* Hide image by default */
+
+
+/* Optional: Show only if the email is valid */
+#valid-icon,#invalid-icon {
+  display: none;
+  height: 30px;
+  width: 30px;
+}
+
+/* Show image only when email input is focused AND valid */
+input[type="email"]:focus:valid + #valid-icon {
+  display: inline;
+}
+
+input[type="email"]:focus:invalid + #invalid-icon {
+  display: inline;
+}
+
+
+/* backgroundClip : gradien
+    color : transparent */
